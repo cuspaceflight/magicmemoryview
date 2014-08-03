@@ -9,7 +9,7 @@ with open('README.rst') as f:
 
 setup(
     name="Magicmemoryview",
-    version="0.1.0",
+    version="0.1.1",
     author='Cambridge University Spaceflight',
     author_email='contact@cusf.co.uk',
     ext_modules = cythonize("magicmemoryview.pyx", compile_time_env={'PY2': PY2}),
