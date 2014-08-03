@@ -8,10 +8,10 @@ in Python 2, ``memoryview`` lacks the ``memoryview.cast`` method
 both Python 2 and 3 require the memory map to be writable (making
 the pointer type ``const`` does not seem to help here either).
 
-This class takes a (possibly read only) memmap object, and produces a
+This class takes a (possibly read-only) memmap object, and produces a
 Python object with a ``__getbuffer__`` method that returns The Right Thing.
 *It pretends that the underlying buffer is writable* to make Cython
-happy. If you give it a readonly buffer, and try to write to the result,
+happy. If you give it a read-only buffer, and try to write to the result,
 then you will have a bad time.
 
 When a Python object is cast by Cython to a pointer, it holds a
