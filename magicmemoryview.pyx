@@ -65,7 +65,7 @@ cdef class MagicMemoryView:
             raise MemoryError()
 
         acc = self.itemsize
-        for i in range(self.ndim - 1, 0, -1):
+        for i in range(self.ndim - 1, -1, -1):
             self.shape[i] = shape[i]
             self.strides[i] = acc
             acc *= self.shape[i]
