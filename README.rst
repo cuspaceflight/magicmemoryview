@@ -26,4 +26,4 @@ Usage::
 
     cdef double data[:, :, :]
 
-    data = MagicMemoryView(source_buffer, (24, 12, 25), "d", 8)
+    data = MagicMemoryView(source_buffer, (24, 12, 25), "d")
