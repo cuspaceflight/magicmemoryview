@@ -18,8 +18,8 @@ with open('README.rst') as f:
     long_description = f.read()
 
 setup(
-    name="Magicmemoryview",
-    version="0.1.3",
+    name="magicmemoryview",
+    version="0.1.4",
     author='Cambridge University Spaceflight',
     author_email='contact@cusf.co.uk',
     url='http://github.com/cuspaceflight/magicmemoryview',
