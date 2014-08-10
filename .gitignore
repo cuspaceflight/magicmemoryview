@@ -1,5 +1,5 @@
 build
 magicmemoryview.c
 magicmemoryview*.so
-Magicmemoryview.egg-info/
+magicmemoryview.egg-info/
 dist/

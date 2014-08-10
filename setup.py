@@ -10,7 +10,8 @@ except ImportError:
 if cython_present:
     PY2 = sys.version_info[0] == 2
     ext_modules = cythonize("magicmemoryview.pyx",
-                            compile_time_env={'PY2': PY2})
+                            compile_time_env={'PY2': PY2},
+                            force=True)
 else:
     ext_modules = Extension('magicmemoryview', ['magicmemoryview.c'])
 
